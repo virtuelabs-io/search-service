@@ -12,14 +12,7 @@
   <component name="ChangeListManager">
     <list default="true" id="0f0b141f-32bd-45d0-92d9-972fa10436cd" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/SearchService/CreateGigsHandler.ts" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/SearchService/CreateGigsHandler.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/SearchService/CreateReviewsHandler.ts" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/SearchService/CreateReviewsHandler.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/SearchService/GetGigsHandler.ts" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/SearchService/GetGigsHandler.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/SearchService/GetProfilesHandler.ts" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/SearchService/GetProfilesHandler.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/SearchService/PublishGigsHandler.ts" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/SearchService/PublishGigsHandler.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/SearchService/UnPublishGigsHandler.ts" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/SearchService/UnPublishGigsHandler.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/SearchService/UpdateGigsHandler.ts" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/SearchService/UpdateGigsHandler.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/SearchService/UpdateProfilesHandler.ts" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/SearchService/UpdateProfilesHandler.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TODO.md" beforeDir="false" afterPath="$PROJECT_DIR$/TODO.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -104,7 +97,7 @@
       <workItem from="1601211645208" duration="285000" />
       <workItem from="1601212050889" duration="22144000" />
       <workItem from="1601319632941" duration="28778000" />
-      <workItem from="1601586444115" duration="6053000" />
+      <workItem from="1601586444115" duration="7568000" />
     </task>
     <servers />
   </component>
