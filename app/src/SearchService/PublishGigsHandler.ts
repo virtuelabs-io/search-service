@@ -5,7 +5,7 @@ import {ESRequest} from "./config/ESRequest";
 import {Constants} from "./utils/Constants";
 import {ESServiceResponse} from "./types/ESServiceResponse";
 
-
+// TODO: Fire a message to handle communication
 export async function fun(event, context = {}, callback = {}) {
   const gigId = event.path.id
   let persistence = new ESService()
@@ -24,10 +24,7 @@ export async function fun(event, context = {}, callback = {}) {
     data: {}
   }
   if (update.statusCode === OK.valueOf()) {
-    let fetchRequest = new ESRequest(
-      [Constants.ES_DOCTYPES._DOC, gigId].join(Constants.PATH_SEPARATOR),
-      {}
-    )
+    let fetchRequest = new ESRequest([Constants.ES_DOCTYPES._DOC, gigId].join(Constants.PATH_SEPARATOR))
     response = await new Promise<ESServiceResponse>(((resolve, reject) => {
       console.log(`${Constants.LOG_LEVEL.INFO}: Fetching Gig ${gigId}`)
       persistence.fire(fetchRequest.request, resolve, reject)

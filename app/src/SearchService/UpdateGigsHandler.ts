@@ -24,10 +24,7 @@ export async function fun(event, context = {}, callback = {}) {
     data: {}
   }
   if (update.statusCode === OK.valueOf()) {
-    let fetchRequest = new ESRequest(
-      [Constants.ES_DOCTYPES._DOC, gigId].join(Constants.PATH_SEPARATOR),
-      {}
-    )
+    let fetchRequest = new ESRequest([Constants.ES_DOCTYPES._DOC, gigId].join(Constants.PATH_SEPARATOR))
     response = await new Promise<ESServiceResponse>(((resolve, reject) => {
       console.log(`${Constants.LOG_LEVEL.INFO}: Fetching Gig ${gigId}`)
       persistence.fire(fetchRequest.request, resolve, reject)

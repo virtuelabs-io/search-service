@@ -24,10 +24,7 @@ export async function fun(event, context = {}, callback = {}) {
     data: {}
   }
   if (update.statusCode === OK.valueOf() || update.statusCode === CREATED.valueOf()) {
-    let fetchRequest = new ESRequest(
-      [Constants.ES_DOCTYPES._DOC, profileId].join(Constants.PATH_SEPARATOR),
-      {}
-    )
+    let fetchRequest = new ESRequest([Constants.ES_DOCTYPES._DOC, profileId].join(Constants.PATH_SEPARATOR))
     response = await new Promise<ESServiceResponse>(((resolve, reject) => {
       console.log(`${Constants.LOG_LEVEL.INFO}: Fetching Profile ${profileId}`)
       persistence.fire(fetchRequest.request, resolve, reject)

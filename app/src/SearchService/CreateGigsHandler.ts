@@ -19,10 +19,7 @@ export async function fun(event, context = {}, callback = {}) {
     data: {}
   }
   if (insert.statusCode === CREATED.valueOf()) {
-    let fetchRequest = new ESRequest(
-      [Constants.ES_DOCTYPES._DOC, insert.data["_id"]].join(Constants.PATH_SEPARATOR),
-      {}
-      )
+    let fetchRequest = new ESRequest([Constants.ES_DOCTYPES._DOC, insert.data["_id"]].join(Constants.PATH_SEPARATOR))
     response = await new Promise<ESServiceResponse>(((resolve, reject) => {
       console.log(`${Constants.LOG_LEVEL.INFO}: Fetching Gig ${insert.data["_id"]}`)
       persistence.fire(fetchRequest.request, resolve, reject)
