@@ -11,42 +11,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0f0b141f-32bd-45d0-92d9-972fa10436cd" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/src/SearchService/CreateGigsHandler.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/SearchService/CreateReviewsHandler.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/SearchService/DeleteGigsHandler.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/SearchService/DeleteProfilesHandler.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/SearchService/DeleteReviewsHandler.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/SearchService/GetGigsHandler.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/SearchService/GetProfilesHandler.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/SearchService/GetReviewsHandler.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/SearchService/PublishGigsHandler.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/SearchService/SearchGigsHandler.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/SearchService/SearchReviewsHandler.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/SearchService/UnPublishGigsHandler.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/SearchService/UpdateGigsHandler.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/SearchService/UpdateProfilesHandler.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/SearchService/UpdateReviewsHandler.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/SearchService/config/ESConfig.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/SearchService/config/ESRequest.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/SearchService/services/ESService.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/SearchService/types/ESServiceResponse.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/SearchService/utils/Constants.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/contract/profile.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/contract/review.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/es/gigs.index.settings.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/es/profiles.index.settings.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/es/reviews.index.settings.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/SearchService/CreateSearchEntry.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/azure-pipelines.yml" beforeDir="false" afterPath="$PROJECT_DIR$/azure-pipelines.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/stage.json" beforeDir="false" afterPath="$PROJECT_DIR$/config/stage.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/contract/CreateSearchEntry.json" beforeDir="false" afterPath="$PROJECT_DIR$/contract/gig.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/serverless.yml" beforeDir="false" afterPath="$PROJECT_DIR$/serverless.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tsconfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/tsconfig.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -131,7 +97,7 @@
       <workItem from="1601211645208" duration="285000" />
       <workItem from="1601212050889" duration="22144000" />
       <workItem from="1601319632941" duration="28778000" />
-      <workItem from="1601586444115" duration="5456000" />
+      <workItem from="1601586444115" duration="5763000" />
     </task>
     <servers />
   </component>

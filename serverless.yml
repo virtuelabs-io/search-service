@@ -76,17 +76,17 @@ functions:
             headers:
               Content-Type: integration.response.header.Content-Type
               Access-Control-Allow-Origin: "'${self:provider.cors-origin}'"
-#          authorizer:
-#            name: authorizer
-#            arn: ${self:provider.cognito-arn}
-#            claims:
-#              - phone_number
-#          cors:
-#            origins:
-#              - '*'
-#            headers:
-#              - Content-Type
-#              - Authorization
+          authorizer:
+            name: authorizer
+            arn: ${self:provider.cognito-arn}
+            claims:
+              - phone_number
+          cors:
+            origins:
+              - '*'
+            headers:
+              - Content-Type
+              - Authorization
   updateGigs:
     name: updateGigs-${self:provider.stage}
     role: SearchServiceFunctionsLambdaRole
@@ -112,17 +112,17 @@ functions:
             headers:
               Content-Type: integration.response.header.Content-Type
               Access-Control-Allow-Origin: "'${self:provider.cors-origin}'"
-#          authorizer:
-#            name: authorizer
-#            arn: ${self:provider.cognito-arn}
-#            claims:
-#              - phone_number
-#          cors:
-#            origins:
-#              - '*'
-#            headers:
-#              - Content-Type
-#              - Authorization
+          authorizer:
+            name: authorizer
+            arn: ${self:provider.cognito-arn}
+            claims:
+              - phone_number
+          cors:
+            origins:
+              - '*'
+            headers:
+              - Content-Type
+              - Authorization
   deleteGigs:
     name: deleteGigs-${self:provider.stage}
     role: SearchServiceFunctionsLambdaRole
@@ -145,17 +145,17 @@ functions:
             headers:
               Content-Type: integration.response.header.Content-Type
               Access-Control-Allow-Origin: "'${self:provider.cors-origin}'"
-#          authorizer:
-#            name: authorizer
-#            arn: ${self:provider.cognito-arn}
-#            claims:
-#              - phone_number
-#          cors:
-#            origins:
-#              - '*'
-#            headers:
-#              - Content-Type
-#              - Authorization
+          authorizer:
+            name: authorizer
+            arn: ${self:provider.cognito-arn}
+            claims:
+              - phone_number
+          cors:
+            origins:
+              - '*'
+            headers:
+              - Content-Type
+              - Authorization
   getGigs:
     name: getGigs-${self:provider.stage}
     role: SearchServiceFunctionsLambdaRole
@@ -211,17 +211,17 @@ functions:
             headers:
               Content-Type: integration.response.header.Content-Type
               Access-Control-Allow-Origin: "'${self:provider.cors-origin}'"
-#          authorizer:
-#            name: authorizer
-#            arn: ${self:provider.cognito-arn}
-#            claims:
-#              - phone_number
-#          cors:
-#            origins:
-#              - '*'
-#            headers:
-#              - Content-Type
-#              - Authorization
+          authorizer:
+            name: authorizer
+            arn: ${self:provider.cognito-arn}
+            claims:
+              - phone_number
+          cors:
+            origins:
+              - '*'
+            headers:
+              - Content-Type
+              - Authorization
   unpublishGigs:
     name: unpublishGigs-${self:provider.stage}
     role: SearchServiceFunctionsLambdaRole
@@ -244,17 +244,17 @@ functions:
             headers:
               Content-Type: integration.response.header.Content-Type
               Access-Control-Allow-Origin: "'${self:provider.cors-origin}'"
-#          authorizer:
-#            name: authorizer
-#            arn: ${self:provider.cognito-arn}
-#            claims:
-#              - phone_number
-#          cors:
-#            origins:
-#              - '*'
-#            headers:
-#              - Content-Type
-#              - Authorization
+          authorizer:
+            name: authorizer
+            arn: ${self:provider.cognito-arn}
+            claims:
+              - phone_number
+          cors:
+            origins:
+              - '*'
+            headers:
+              - Content-Type
+              - Authorization
   searchGigs:
     name: searchGigs-${self:provider.stage}
     role: SearchServiceFunctionsLambdaRole
@@ -313,17 +313,17 @@ functions:
             headers:
               Content-Type: integration.response.header.Content-Type
               Access-Control-Allow-Origin: "'${self:provider.cors-origin}'"
-#          authorizer:
-#            name: authorizer
-#            arn: ${self:provider.cognito-arn}
-#            claims:
-#              - phone_number
-#          cors:
-#            origins:
-#              - '*'
-#            headers:
-#              - Content-Type
-#              - Authorization
+          authorizer:
+            name: authorizer
+            arn: ${self:provider.cognito-arn}
+            claims:
+              - phone_number
+          cors:
+            origins:
+              - '*'
+            headers:
+              - Content-Type
+              - Authorization
   updateProfiles:
     name: updateProfiles-${self:provider.stage}
     role: SearchServiceFunctionsLambdaRole
@@ -349,17 +349,17 @@ functions:
             headers:
               Content-Type: integration.response.header.Content-Type
               Access-Control-Allow-Origin: "'${self:provider.cors-origin}'"
-#          authorizer:
-#            name: authorizer
-#            arn: ${self:provider.cognito-arn}
-#            claims:
-#              - phone_number
-#          cors:
-#            origins:
-#              - '*'
-#            headers:
-#              - Content-Type
-#              - Authorization
+          authorizer:
+            name: authorizer
+            arn: ${self:provider.cognito-arn}
+            claims:
+              - phone_number
+          cors:
+            origins:
+              - '*'
+            headers:
+              - Content-Type
+              - Authorization
   deleteProfiles:
     name: deleteProfiles-${self:provider.stage}
     role: SearchServiceFunctionsLambdaRole
@@ -382,17 +382,17 @@ functions:
             headers:
               Content-Type: integration.response.header.Content-Type
               Access-Control-Allow-Origin: "'${self:provider.cors-origin}'"
-#          authorizer:
-#            name: authorizer
-#            arn: ${self:provider.cognito-arn}
-#            claims:
-#              - phone_number
-#          cors:
-#            origins:
-#              - '*'
-#            headers:
-#              - Content-Type
-#              - Authorization
+          authorizer:
+            name: authorizer
+            arn: ${self:provider.cognito-arn}
+            claims:
+              - phone_number
+          cors:
+            origins:
+              - '*'
+            headers:
+              - Content-Type
+              - Authorization
   getProfiles:
     name: getProfiles-${self:provider.stage}
     role: SearchServiceFunctionsLambdaRole
@@ -451,17 +451,17 @@ functions:
             headers:
               Content-Type: integration.response.header.Content-Type
               Access-Control-Allow-Origin: "'${self:provider.cors-origin}'"
-  #          authorizer:
-  #            name: authorizer
-  #            arn: ${self:provider.cognito-arn}
-  #            claims:
-  #              - phone_number
-  #          cors:
-  #            origins:
-  #              - '*'
-  #            headers:
-  #              - Content-Type
-  #              - Authorization
+            authorizer:
+              name: authorizer
+              arn: ${self:provider.cognito-arn}
+              claims:
+                - phone_number
+            cors:
+              origins:
+                - '*'
+              headers:
+                - Content-Type
+                - Authorization
   updateReviews:
     name: updateReviews-${self:provider.stage}
     role: SearchServiceFunctionsLambdaRole
@@ -487,17 +487,17 @@ functions:
             headers:
               Content-Type: integration.response.header.Content-Type
               Access-Control-Allow-Origin: "'${self:provider.cors-origin}'"
-  #          authorizer:
-  #            name: authorizer
-  #            arn: ${self:provider.cognito-arn}
-  #            claims:
-  #              - phone_number
-  #          cors:
-  #            origins:
-  #              - '*'
-  #            headers:
-  #              - Content-Type
-  #              - Authorization
+            authorizer:
+              name: authorizer
+              arn: ${self:provider.cognito-arn}
+              claims:
+                - phone_number
+            cors:
+              origins:
+                - '*'
+              headers:
+                - Content-Type
+                - Authorization
   deleteReviews:
     name: deleteReviews-${self:provider.stage}
     role: SearchServiceFunctionsLambdaRole
@@ -520,17 +520,17 @@ functions:
             headers:
               Content-Type: integration.response.header.Content-Type
               Access-Control-Allow-Origin: "'${self:provider.cors-origin}'"
-  #          authorizer:
-  #            name: authorizer
-  #            arn: ${self:provider.cognito-arn}
-  #            claims:
-  #              - phone_number
-  #          cors:
-  #            origins:
-  #              - '*'
-  #            headers:
-  #              - Content-Type
-  #              - Authorization
+          authorizer:
+            name: authorizer
+            arn: ${self:provider.cognito-arn}
+            claims:
+              - phone_number
+          cors:
+            origins:
+              - '*'
+            headers:
+              - Content-Type
+              - Authorization
   getReviews:
     name: getReviews-${self:provider.stage}
     role: SearchServiceFunctionsLambdaRole
