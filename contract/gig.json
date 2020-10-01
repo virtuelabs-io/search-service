@@ -1,0 +1,438 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "title": "Gigs Schema",
+  "description": "Schema which defines how gigs  are structured",
+  "default": {},
+  "required": [
+    "category",
+    "subCatL1",
+    "subCatL2",
+    "datePublished",
+    "reviewed",
+    "enabled",
+    "ref",
+    "title",
+    "description",
+    "startingPrice",
+    "currency",
+    "tags",
+    "displayImages",
+    "options",
+    "status",
+    "faqs",
+    "seller",
+    "packages"
+  ],
+  "properties": {
+    "category": {
+      "type": "string",
+      "title": "Gigs Category",
+      "description": "Gigs Level 1 Categorisation",
+      "default": ""
+    },
+    "subCatL1": {
+      "type": "string",
+      "title": "Sub Category 1",
+      "description": "Sub-Category level 1, the gig belongs to",
+      "default": ""
+    },
+    "subCatL2": {
+      "type": "string",
+      "title": "Sub Category level 2",
+      "description": "Sub-Category Level 2, the gig belongs to",
+      "default": ""
+    },
+    "datePublished": {
+      "type": "string",
+      "title": "Gig published date",
+      "description": "Date on which the gig is published",
+      "default": ""
+    },
+    "reviewed": {
+      "type": "boolean",
+      "title": "Backoffice Review",
+      "description": "Gig reviewed by backoffice system/personal",
+      "default": false
+    },
+    "enabled": {
+      "type": "boolean",
+      "title": "Enable Gig",
+      "description": "Enable the gig for sale",
+      "default": false
+    },
+    "ref": {
+      "type": "string",
+      "title": "Reference URL",
+      "description": "Link to the Gig. Can be used for SEO",
+      "default": ""
+    },
+    "title": {
+      "type": "string",
+      "title": "Gigs Title",
+      "description": "Small explanation of the gig which will be shown as title",
+      "default": ""
+    },
+    "description": {
+      "type": "string",
+      "title": "Description of the Gig",
+      "description": "Explanation of what the gig is all about",
+      "default": ""
+    },
+    "startingPrice": {
+      "type": "number",
+      "title": "Starting Price",
+      "description": "Min price offered by the Gig",
+      "default": 0.0
+    },
+    "currency": {
+      "type": "string",
+      "title": "Currency",
+      "description": "Currency of transaction",
+      "default": "INR",
+      "enum": ["INR", "USD"]
+    },
+    "tags": {
+      "type": "array",
+      "title": "Gig Tags",
+      "description": "Tags of the Gig which can be used for application search and SEO",
+      "default": [],
+      "additionalItems": true,
+      "minItems": 0,
+      "maxItems": 10,
+      "uniqueItems": true,
+      "items": {
+        "type": "string",
+        "title": "Tag",
+        "description": "Gig's Tag",
+        "default": ""
+      }
+    },
+    "displayImages": {
+      "type": "array",
+      "title": "Images showcase links",
+      "description": "URLs of the images in the showcase",
+      "default": [],
+      "additionalItems": false,
+      "minItems": 0,
+      "maxItems": 20,
+      "uniqueItems": true,
+      "items": {
+        "type": "string",
+        "title": "URL of the Image",
+        "description": "Image URL",
+        "default": ""
+      }
+    },
+    "options": {
+      "type": "object",
+      "title": "Gig Options",
+      "description": "All options related to a gig",
+      "default": {},
+      "additionalProperties": true
+    },
+    "status": {
+      "type": "object",
+      "title": "Gig Status",
+      "description": "Status holder for the Gig",
+      "default": {},
+      "required": [
+        "basicInfo",
+        "imageUpload",
+        "services",
+        "deliveryTimes",
+        "pricing",
+        "published"
+      ],
+      "properties": {
+        "basicInfo": {
+          "type": "boolean",
+          "title": "Basic Info Status",
+          "description": "Basic Info Status",
+          "default": false
+        },
+        "imageUpload": {
+          "type": "boolean",
+          "title": "Image Upload Status",
+          "description": "Image Upload Status",
+          "default": false
+        },
+        "services": {
+          "type": "boolean",
+          "title": "Services Status",
+          "description": "Services Status",
+          "default": false
+        },
+        "deliveryTimes": {
+          "type": "boolean",
+          "title": "Delivery Times Status",
+          "description": "Delivery Times Status",
+          "default": false
+        },
+        "pricing": {
+          "type": "boolean",
+          "title": "Pricing Status",
+          "description": "Pricing Status",
+          "default": false
+        },
+        "published": {
+          "type": "boolean",
+          "title": "Published status",
+          "description": "Published status",
+          "default": false
+        }
+      },
+      "additionalProperties": false
+    },
+    "faqs": {
+      "type": "array",
+      "title": "FAQ",
+      "description": "Frequently asked questions by customers",
+      "default": [],
+      "additionalItems": false,
+      "items": {
+        "type": "object",
+        "title": "FAQ Object",
+        "description": "FAQ Object",
+        "default": {},
+        "required": [
+          "question",
+          "answer"
+        ],
+        "properties": {
+          "question": {
+            "type": "string",
+            "title": "Question",
+            "description": "Question",
+            "default": ""
+          },
+          "answer": {
+            "type": "string",
+            "title": "Answer",
+            "description": "Answer",
+            "default": ""
+          }
+        },
+        "additionalProperties": false
+      }
+    },
+    "seller": {
+      "type": "object",
+      "title": "Sellers Information",
+      "description": "All data necessary for searching content based on the seller",
+      "default": {},
+      "required": [
+        "sId",
+        "level",
+        "pro",
+        "speaks",
+        "location",
+        "country"
+      ],
+      "properties": {
+        "sId": {
+          "type": "string",
+          "title": "Seller ID",
+          "description": "Sellers Unique Identifier",
+          "default": ""
+        },
+        "level": {
+          "type": "number",
+          "title": "Maturity Level",
+          "description": "Maturity Level of the seller",
+          "default": 1,
+          "enum": [1, 2, 3, 4, 5]
+        },
+        "pro": {
+          "type": "boolean",
+          "title": "Pro indicator flag",
+          "description": "Pro indicator flag used to distinguish subscribed and unsubscribed sellers",
+          "default": false
+        },
+        "speaks": {
+          "type": "array",
+          "title": "Languages spoken",
+          "description": "Specifies which languages the seller is comfortable with",
+          "default": [],
+          "additionalItems": false,
+          "minItems": 0,
+          "maxItems": 7,
+          "uniqueItems": true,
+          "items": {
+            "type": "string",
+            "title": "Language",
+            "description": "Language spoken",
+            "default": ""
+          }
+        },
+        "location": {
+          "type": "object",
+          "title": "Geo Location",
+          "description": "Lat/Long Geo Location",
+          "default": {},
+          "required": [
+            "lat",
+            "lon"
+          ],
+          "properties": {
+            "lat": {
+              "type": "number",
+              "title": "Latitude",
+              "description": "Latitude",
+              "default": 0.0
+            },
+            "lon": {
+              "type": "number",
+              "title": "Longitude",
+              "description": "Longitude",
+              "default": 0.0
+            }
+          },
+          "additionalProperties": false
+        },
+        "country": {
+          "type": "string",
+          "title": "Country",
+          "description": "Country the seller belongs to",
+          "default": ""
+        }
+      },
+      "additionalProperties": false
+    },
+    "packages": {
+      "type": "object",
+      "title": "The packages schema",
+      "description": "An explanation about the purpose of this instance.",
+      "default": {},
+      "required": [
+        "basic",
+        "standard",
+        "premium"
+      ],
+      "properties": {
+        "basic": {
+          "type": "object",
+          "title": "Basic Option",
+          "description": "Basic Option",
+          "default": {},
+          "required": [
+            "description",
+            "cost",
+            "revisions",
+            "offeredServices"
+          ],
+          "properties": {
+            "description": {
+              "type": "string",
+              "title": "Pricing description",
+              "description": "Pricing description",
+              "default": ""
+            },
+            "cost": {
+              "type": "number",
+              "title": "Cost",
+              "description": "Cost of the pricing category",
+              "default": 0.0
+            },
+            "revisions": {
+              "type": "string",
+              "title": "Revisions Allowed",
+              "description": "Allowed number of revisions",
+              "default": ""
+            },
+            "offeredServices": {
+              "type": "object",
+              "title": "Services available",
+              "description": "Services offered as part of this option",
+              "default": {},
+              "additionalProperties": true
+            }
+          },
+          "additionalProperties": false
+        },
+        "standard": {
+          "type": "object",
+          "title": "Standard Option",
+          "description": "Standard Option",
+          "default": {},
+          "required": [
+            "description",
+            "cost",
+            "revisions",
+            "offeredServices"
+          ],
+          "properties": {
+            "description": {
+              "type": "string",
+              "title": "Pricing description",
+              "description": "Pricing description",
+              "default": ""
+            },
+            "cost": {
+              "type": "number",
+              "title": "Cost",
+              "description": "Cost of the pricing category",
+              "default": 0.0
+            },
+            "revisions": {
+              "type": "string",
+              "title": "Revisions Allowed",
+              "description": "Allowed number of revisions",
+              "default": ""
+            },
+            "offeredServices": {
+              "type": "object",
+              "title": "Services available",
+              "description": "Services offered as part of this option",
+              "default": {},
+              "additionalProperties": true
+            }
+          },
+          "additionalProperties": false
+        },
+        "premium": {
+          "type": "object",
+          "title": "Premium Option",
+          "description": "Premium Option",
+          "default": {},
+          "required": [
+            "description",
+            "cost",
+            "revisions",
+            "offeredServices"
+          ],
+          "properties": {
+            "description": {
+              "type": "string",
+              "title": "Pricing description",
+              "description": "Pricing description",
+              "default": ""
+            },
+            "cost": {
+              "type": "number",
+              "title": "Cost",
+              "description": "Cost of the pricing category",
+              "default": 0.0
+            },
+            "revisions": {
+              "type": "string",
+              "title": "Revisions Allowed",
+              "description": "Allowed number of revisions",
+              "default": ""
+            },
+            "offeredServices": {
+              "type": "object",
+              "title": "Services available",
+              "description": "Services offered as part of this option",
+              "default": {},
+              "additionalProperties": true
+            }
+          },
+          "additionalProperties": false
+        }
+      },
+      "additionalProperties": false
+    }
+  },
+  "additionalProperties": false
+}

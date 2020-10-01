@@ -1,0 +1,89 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "title": "Reviews Schema",
+  "description": "Scheme for reviews",
+  "default": {},
+  "required": [
+    "gigId",
+    "sId",
+    "cId",
+    "rating",
+    "review",
+    "createdOn",
+    "updatedOn",
+    "displayImages",
+    "helpful"
+  ],
+  "properties": {
+    "gigId": {
+      "type": "string",
+      "title": "Gig Id",
+      "description": "Gig's Id",
+      "default": ""
+    },
+    "sId": {
+      "type": "string",
+      "title": "Seller Id",
+      "description": "Id of the seller receiving the review",
+      "default": ""
+    },
+    "cId": {
+      "type": "string",
+      "title": "Customer Id",
+      "description": "Id of the customer who is posting the review",
+      "default": ""
+    },
+    "rating": {
+      "type": "number",
+      "title": "Rating",
+      "description": "Rating of the work. Ranging from 0 to 5",
+      "default": 0.0
+    },
+    "review": {
+      "type": "string",
+      "title": "Review",
+      "description": "Review text",
+      "default": ""
+    },
+    "createdOn": {
+      "type": "string",
+      "title": "Created On",
+      "description": "Date on which the review was first posted",
+      "default": ""
+    },
+    "updatedOn": {
+      "type": "string",
+      "title": "Updated On",
+      "description": "Date on which the review was updated",
+      "default": ""
+    },
+    "displayImages": {
+      "type": "array",
+      "title": "Image replies",
+      "description": "Display images for the review",
+      "default": [],
+      "additionalItems": true,
+      "items": {
+        "type": "string",
+        "title": "Image URLs",
+        "description": "Image links",
+        "default": ""
+      }
+    },
+    "helpful": {
+      "type": "array",
+      "title": "Helpful",
+      "description": "List of customers who found this reply helpful",
+      "default": [],
+      "additionalItems": true,
+      "items": {
+        "type": "string",
+        "title": "Customer Ids",
+        "description": "Customer Ids who found this review helpful",
+        "default": ""
+      }
+    }
+  },
+  "additionalProperties": false
+}

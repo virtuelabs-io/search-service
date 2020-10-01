@@ -1,0 +1,66 @@
+{
+  "name": "@virtuelabs-io/search-service",
+  "version": "0.0.1",
+  "description": "Virtuelabs Search Service",
+  "scripts": {
+    "test": "mocha -r ts-node/register -r source-map-support/register --full-trace -b app/tests/**/*.test.ts",
+    "codecov": "nyc npm run test",
+    "stage-deploy": "serverless deploy --stage stage",
+    "prod-deploy": "serverless deploy --stage prod",
+    "stage-remove": "serverless remove --stage stage",
+    "prod-remove": "serverless remove --stage prod",
+    "lint": "./node_modules/.bin/eslint app/src"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/virtuelabs-io/search-service.git"
+  },
+  "nyc": {
+    "all": true,
+    "include": [
+      "app/**/*.ts"
+    ],
+    "extension": [
+      ".ts"
+    ],
+    "require": [
+      "ts-node/register"
+    ],
+    "reporter": [
+      "text-summary",
+      "html",
+      "lcov"
+    ],
+    "sourceMap": true,
+    "instrument": true
+  },
+  "author": "Sangram Reddy (https://github.com/reddy-s)",
+  "homepage": "",
+  "license": "CCL",
+  "devDependencies": {
+    "@types/chai": "^4.2.12",
+    "@types/lodash": "4.14.91",
+    "@types/mocha": "^8.0.3",
+    "@types/node": "^11.13.0",
+    "aws-sdk-mock": "^5.1.0",
+    "chai": "^4.2.0",
+    "json-loader": "^0.5.7",
+    "mocha": "^8.1.3",
+    "nyc": "^15.1.0",
+    "prettier": "^2.1.2",
+    "serverless": "^2.3.0",
+    "serverless-offline": "^6.8.0",
+    "serverless-plugin-typescript": "^1.1.9",
+    "serverless-webpack": "^5.3.5",
+    "source-map-support": "^0.5.19",
+    "ts-node": "^9.0.0",
+    "typescript": "^4.0.3",
+    "webpack": "^4.44.2"
+  },
+  "dependencies": {
+    "aws-sdk": "^2.761.0",
+    "http-status": "^1.4.2",
+    "node-fetch": "^2.6.1"
+  },
+  "peerDependencies": {}
+}

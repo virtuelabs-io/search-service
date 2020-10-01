@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="0f0b141f-32bd-45d0-92d9-972fa10436cd" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/app/src/SearchService/CreateGigsHandler.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/SearchService/CreateReviewsHandler.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/SearchService/DeleteGigsHandler.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/SearchService/DeleteProfilesHandler.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/SearchService/DeleteReviewsHandler.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/SearchService/GetGigsHandler.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/SearchService/GetProfilesHandler.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/SearchService/GetReviewsHandler.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/SearchService/PublishGigsHandler.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/SearchService/SearchGigsHandler.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/SearchService/SearchReviewsHandler.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/SearchService/UnPublishGigsHandler.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/SearchService/UpdateGigsHandler.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/SearchService/UpdateProfilesHandler.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/SearchService/UpdateReviewsHandler.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/SearchService/config/ESConfig.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/SearchService/config/ESRequest.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/SearchService/services/ESService.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/SearchService/types/ESServiceResponse.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/SearchService/utils/Constants.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/contract/profile.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/contract/review.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/es/gigs.index.settings.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/es/profiles.index.settings.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/es/reviews.index.settings.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/SearchService/CreateSearchEntry.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/azure-pipelines.yml" beforeDir="false" afterPath="$PROJECT_DIR$/azure-pipelines.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/stage.json" beforeDir="false" afterPath="$PROJECT_DIR$/config/stage.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/contract/CreateSearchEntry.json" beforeDir="false" afterPath="$PROJECT_DIR$/contract/gig.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/serverless.yml" beforeDir="false" afterPath="$PROJECT_DIR$/serverless.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tsconfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/tsconfig.json" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="EditorConfigPreviewManager">
+    <editorConfig file="$PROJECT_DIR$/../../../.editorconfig" previewFile="$PROJECT_DIR$/serverless.yml" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1i34GD52c91e6cSjNCnAX8Yoym1" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/app/src/SearchService" />
+    <property name="nodejs.jest.jest_package" value="" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="prettierjs.PrettierConfiguration.Package" value="$PROJECT_DIR$/node_modules/prettier" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="ts.external.directory.path" value="$PROJECT_DIR$/node_modules/typescript/lib" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/app/src/SearchService" />
+      <recent name="$PROJECT_DIR$/es" />
+      <recent name="$PROJECT_DIR$/contract" />
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/test/SearchService" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/app/src/SearchService" />
+      <recent name="$PROJECT_DIR$/app/src/SearchService/Services" />
+      <recent name="$PROJECT_DIR$/app/src" />
+      <recent name="$PROJECT_DIR$/app" />
+      <recent name="$PROJECT_DIR$/src/SearchService" />
+    </key>
+  </component>
+  <component name="RunManager" selected="JavaScript Debug.index.html">
+    <configuration name="Testing: CreateSearchEntry" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+      <node-interpreter value="project" />
+      <node-options value="" />
+      <jest-package value="" />
+      <working-dir value="$PROJECT_DIR$" />
+      <envs />
+      <scope-kind value="SUITE" />
+      <test-file value="$PROJECT_DIR$/test/SearchService/CreateSearchEntry.test..js" />
+      <test-names>
+        <test-name value="Testing: CreateSearchEntry" />
+      </test-names>
+      <method v="2" />
+    </configuration>
+    <configuration name="index.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/sercart-gigs-service/coverage/lcov-report/index.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JavaScript Debug.index.html" />
+        <item itemvalue="Jest.Testing: CreateSearchEntry" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="0f0b141f-32bd-45d0-92d9-972fa10436cd" name="Default Changelist" comment="" />
+      <created>1601122843464</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1601122843464</updated>
+      <workItem from="1601122844502" duration="16960000" />
+      <workItem from="1601211645208" duration="285000" />
+      <workItem from="1601212050889" duration="22144000" />
+      <workItem from="1601319632941" duration="28778000" />
+      <workItem from="1601586444115" duration="5456000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state width="1626" height="281" key="GridCell.Tab.0.bottom" timestamp="1601213818483">
+      <screen x="0" y="0" width="1680" height="1050" />
+    </state>
+    <state width="1626" height="281" key="GridCell.Tab.0.bottom/-1263.-1080.1920.1080/657.-1920.1080.1920/0.0.1680.1050@0.0.1680.1050" timestamp="1601213818483" />
+    <state width="1626" height="281" key="GridCell.Tab.0.center" timestamp="1601213818482">
+      <screen x="0" y="0" width="1680" height="1050" />
+    </state>
+    <state width="1626" height="281" key="GridCell.Tab.0.center/-1263.-1080.1920.1080/657.-1920.1080.1920/0.0.1680.1050@0.0.1680.1050" timestamp="1601213818482" />
+    <state width="1626" height="281" key="GridCell.Tab.0.left" timestamp="1601213818481">
+      <screen x="0" y="0" width="1680" height="1050" />
+    </state>
+    <state width="1626" height="281" key="GridCell.Tab.0.left/-1263.-1080.1920.1080/657.-1920.1080.1920/0.0.1680.1050@0.0.1680.1050" timestamp="1601213818481" />
+    <state width="1626" height="281" key="GridCell.Tab.0.right" timestamp="1601213818482">
+      <screen x="0" y="0" width="1680" height="1050" />
+    </state>
+    <state width="1626" height="281" key="GridCell.Tab.0.right/-1263.-1080.1920.1080/657.-1920.1080.1920/0.0.1680.1050@0.0.1680.1050" timestamp="1601213818482" />
+    <state x="238" y="76" key="SettingsEditor" timestamp="1601212216381">
+      <screen x="0" y="0" width="1680" height="1050" />
+    </state>
+    <state x="238" y="76" key="SettingsEditor/-1263.-1080.1920.1080/657.-1920.1080.1920/0.0.1680.1050@0.0.1680.1050" timestamp="1601212216381" />
+    <state x="419" y="15" width="840" height="1034" key="search.everywhere.popup" timestamp="1601330619631">
+      <screen x="0" y="0" width="1680" height="1050" />
+    </state>
+    <state x="419" y="15" width="840" height="1034" key="search.everywhere.popup/-1263.-1080.1920.1080/657.-1920.1080.1920/0.0.1680.1050@0.0.1680.1050" timestamp="1601330619631" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/app/src/SearchService/DeleteProfilesHandler.ts</url>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>

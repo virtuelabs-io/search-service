@@ -1,0 +1,99 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "title": "Profile Schema",
+  "description": "System user profile schema",
+  "default": {},
+  "required": [
+    "firstName",
+    "lastName",
+    "level",
+    "profileType",
+    "pro",
+    "speaks",
+    "location",
+    "country"
+  ],
+  "properties": {
+    "firstName": {
+      "type": "string",
+      "title": "First Name",
+      "description": "First name of the profile holder",
+      "default": ""
+    },
+    "lastName": {
+      "type": "string",
+      "title": "Last Name",
+      "description": "Last name of the profile holder",
+      "default": ""
+    },
+    "profileType": {
+      "type": "string",
+      "title": "Profile Type",
+      "description": "An explanation about the purpose of this instance.",
+      "default": "SELLER",
+      "enum": ["SELLER", "BUYER"]
+    },
+    "level": {
+      "type": "number",
+      "title": "Maturity Level",
+      "description": "Maturity Level of the seller",
+      "default": 1,
+      "enum": [1, 2, 3, 4, 5]
+    },
+    "pro": {
+      "type": "boolean",
+      "title": "Pro indicator flag",
+      "description": "Pro indicator flag used to distinguish subscribed and unsubscribed sellers",
+      "default": false
+    },
+    "speaks": {
+      "type": "array",
+      "title": "Languages spoken",
+      "description": "Specifies which languages the seller is comfortable with",
+      "default": [],
+      "additionalItems": false,
+      "minItems": 0,
+      "maxItems": 7,
+      "uniqueItems": true,
+      "items": {
+        "type": "string",
+        "title": "Language",
+        "description": "Language spoken",
+        "default": ""
+      }
+    },
+    "location": {
+      "type": "object",
+      "title": "Geo Location",
+      "description": "Lat/Long Geo Location",
+      "default": {},
+      "required": [
+        "lat",
+        "lon"
+      ],
+      "properties": {
+        "lat": {
+          "type": "number",
+          "title": "Latitude",
+          "description": "Latitude",
+          "default": 0.0
+        },
+        "lon": {
+          "type": "number",
+          "title": "Longitude",
+          "description": "Longitude",
+          "default": 0.0
+        }
+      },
+      "additionalProperties": false
+    },
+    "country": {
+      "type": "string",
+      "title": "Country",
+      "description": "Country the seller belongs to",
+      "default": ""
+    }
+  },
+  "additionalProperties": false
+}
