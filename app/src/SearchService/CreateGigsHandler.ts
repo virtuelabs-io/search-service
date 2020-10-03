@@ -14,11 +14,13 @@ export async function fun(event, context = {}, callback = {}) {
     console.log(`${Constants.LOG_LEVEL.INFO}: Inserting Gig`)
     persistence.fire(insertRequest.request, resolve, reject)
   }))
+
   let response: ESServiceResponse = {
     statusCode: NOT_FOUND.valueOf(),
     message: NOT_FOUND.toLocaleString(),
     data: {}
   }
+
   if (insert.statusCode === CREATED.valueOf()) {
     let fetchRequest = new ESRequest([Constants.ES_DOCTYPES._DOC, insert.data["_id"]].join(Constants.PATH_SEPARATOR))
     response = await new Promise<ESServiceResponse>(((resolve, reject) => {
@@ -26,5 +28,6 @@ export async function fun(event, context = {}, callback = {}) {
       persistence.fire(fetchRequest.request, resolve, reject)
     }))
   }
+
   return response
 }

@@ -14,15 +14,18 @@ export async function fun(event, context = {}, callback = {}) {
     { "doc": { "enabled": false } },
     Constants.HTTP_METHOD.POST
   )
+
   let update = await new Promise<ESServiceResponse>(((resolve, reject) => {
     console.log(`${Constants.LOG_LEVEL.INFO}: Publishing Gig ${gigId}`)
     persistence.fire(updateRequest.request, resolve, reject)
   }))
+
   let response: ESServiceResponse = {
     statusCode: NOT_FOUND.valueOf(),
     message: NOT_FOUND.toLocaleString(),
     data: {}
   }
+
   if (update.statusCode === OK.valueOf()) {
     let fetchRequest = new ESRequest([Constants.ES_DOCTYPES._DOC, gigId].join(Constants.PATH_SEPARATOR))
     response = await new Promise<ESServiceResponse>(((resolve, reject) => {
@@ -30,5 +33,6 @@ export async function fun(event, context = {}, callback = {}) {
       persistence.fire(fetchRequest.request, resolve, reject)
     }))
   }
+
   return response
 }

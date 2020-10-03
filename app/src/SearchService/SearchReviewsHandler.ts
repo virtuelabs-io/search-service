@@ -11,5 +11,6 @@ export async function fun(event, context = {}, callback = {}) {
     console.log(`${Constants.LOG_LEVEL.INFO}: Search Reviews query\n${event.body}`)
     persistence.fire(searchRequest.request, resolve, reject)
   }))
+
   return response
 }

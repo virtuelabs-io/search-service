@@ -12,5 +12,6 @@ export async function fun(event, context = {}, callback = {}) {
     console.log(`${Constants.LOG_LEVEL.INFO}: Get Gig ${gigId}`)
     persistence.fire(readRequest.request, resolve, reject)
   }))
+
   return response
 }

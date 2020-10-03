@@ -13,6 +13,7 @@ export async function fun(event, context = {}, callback = {}) {
     message: UNAUTHORIZED.toLocaleString(),
     data: {}
   }
+
   let persistence = new ESService()
   let fetchRequest = new ESRequest([Constants.ES_DOCTYPES._DOC, gigId].join(Constants.PATH_SEPARATOR))
   let fetchResponse = await new Promise<ESServiceResponse>(((resolve, reject) => {
@@ -29,9 +30,11 @@ export async function fun(event, context = {}, callback = {}) {
     {},
     Constants.HTTP_METHOD.DELETE
   )
+
   response = await new Promise<ESServiceResponse>(((resolve, reject) => {
     console.log(`${Constants.LOG_LEVEL.INFO}: Delete Gig ${gigId}`)
     persistence.fire(deleteRequest.request, resolve, reject)
   }))
+
   return response
 }

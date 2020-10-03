@@ -11,9 +11,11 @@ export async function fun(event, context = {}, callback = {}) {
     {},
     Constants.HTTP_METHOD.DELETE
   )
+
   let response = await new Promise<ESServiceResponse>(((resolve, reject) => {
     console.log(`${Constants.LOG_LEVEL.INFO}: Delete Profile ${event.cognitoPoolClaims.sub}`)
     persistence.fire(deleteRequest.request, resolve, reject)
   }))
+
   return response
 }

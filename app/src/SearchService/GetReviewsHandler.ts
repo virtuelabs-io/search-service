@@ -12,5 +12,6 @@ export async function fun(event, context = {}, callback = {}) {
     console.log(`${Constants.LOG_LEVEL.INFO}: Get Review ${reviewId}`)
     persistence.fire(readRequest.request, resolve, reject)
   }))
+
   return response
 }
