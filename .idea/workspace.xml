@@ -11,19 +11,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0f0b141f-32bd-45d0-92d9-972fa10436cd" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/src/SearchService/services/MessageService.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/tests/SearchService/services/MessageService.test.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TODO.md" beforeDir="false" afterPath="$PROJECT_DIR$/TODO.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/SearchService/CreateReviewsHandler.ts" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/SearchService/CreateReviewsHandler.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/SearchService/PublishGigsHandler.ts" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/SearchService/PublishGigsHandler.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/SearchService/UpdateProfilesHandler.ts" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/SearchService/UpdateProfilesHandler.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/SearchService/utils/Constants.ts" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/SearchService/utils/Constants.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/tests/SearchService/secrets/secrets.ts" beforeDir="false" afterPath="$PROJECT_DIR$/app/tests/SearchService/secrets/secrets.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/tests/SearchService/utils/Commons.ts" beforeDir="false" afterPath="$PROJECT_DIR$/app/tests/SearchService/utils/Commons.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/stage.json" beforeDir="false" afterPath="$PROJECT_DIR$/config/stage.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/serverless.yml" beforeDir="false" afterPath="$PROJECT_DIR$/serverless.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -172,7 +161,7 @@
       <workItem from="1601319632941" duration="28778000" />
       <workItem from="1601586444115" duration="7568000" />
       <workItem from="1601663697637" duration="23252000" />
-      <workItem from="1601692209122" duration="12171000" />
+      <workItem from="1601692209122" duration="13037000" />
     </task>
     <servers />
   </component>
