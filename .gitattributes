@@ -1,1 +1,2 @@
 config/*  filter=crypt diff=crypt
+app/**/*secrets.ts  filter=crypt diff=crypt

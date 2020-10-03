@@ -7,7 +7,7 @@ import {ESServiceResponse} from "./types/ESServiceResponse";
 
 
 export async function fun(event, context = {}, callback = {}) {
-  const profileId = event.path.id
+  const profileId = event.cognitoPoolClaims.sub
   let persistence = new ESService()
   let updateRequest = new ESRequest(
     [Constants.ES_DOCTYPES._DOC, profileId].join(Constants.PATH_SEPARATOR),

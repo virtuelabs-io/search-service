@@ -7,6 +7,7 @@ import {ESServiceResponse} from "./types/ESServiceResponse";
 
 // TODO: validate if the review can be posted based on customer's transactions
 export async function fun(event, context = {}, callback = {}) {
+  event.body.cId = event.cognitoPoolClaims.sub
   let persistence = new ESService()
   let insertRequest = new ESRequest(Constants.ES_DOCTYPES._DOC, event.body, Constants.HTTP_METHOD.POST)
   let insert = await new Promise<ESServiceResponse>(((resolve, reject) => {

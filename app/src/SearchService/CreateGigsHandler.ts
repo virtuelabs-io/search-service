@@ -1,4 +1,4 @@
-import {NOT_FOUND, CREATED} from "http-status"
+import {CREATED, NOT_FOUND} from "http-status"
 
 import {ESService} from "./services/ESService";
 import {ESRequest} from "./config/ESRequest";
@@ -7,6 +7,7 @@ import {ESServiceResponse} from "./types/ESServiceResponse";
 
 
 export async function fun(event, context = {}, callback = {}) {
+  event.body.seller.sId = event.cognitoPoolClaims.sub
   let persistence = new ESService()
   let insertRequest = new ESRequest(Constants.ES_DOCTYPES._DOC, event.body, Constants.HTTP_METHOD.POST)
   let insert = await new Promise<ESServiceResponse>(((resolve, reject) => {
