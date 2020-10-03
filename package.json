@@ -9,7 +9,7 @@
     "prod-deploy": "serverless deploy --stage prod",
     "stage-remove": "serverless remove --stage stage",
     "prod-remove": "serverless remove --stage prod",
-    "lint": "./node_modules/.bin/eslint app/src"
+    "lint": "./node_modules/.bin/eslint app"
   },
   "repository": {
     "type": "git",

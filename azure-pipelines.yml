@@ -30,7 +30,6 @@ steps:
 - script: |
     brew install transcrypt
     transcrypt --yes -c aes-256-cbc -p $ENCRYPTED_BY_ME
-    cat ./config/stage.json
   displayName: 'Transcript Initialization'
   env:
     ENCRYPTED_BY_ME: $(ENCRYPTED_BY_ME)
