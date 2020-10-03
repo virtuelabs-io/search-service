@@ -12,8 +12,7 @@
   <component name="ChangeListManager">
     <list default="true" id="0f0b141f-32bd-45d0-92d9-972fa10436cd" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/azure-pipelines.yml" beforeDir="false" afterPath="$PROJECT_DIR$/azure-pipelines.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/tests/SearchService/services/ESService.test.ts" beforeDir="false" afterPath="$PROJECT_DIR$/app/tests/SearchService/services/ESService.test.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -63,7 +62,7 @@
       <recent name="$PROJECT_DIR$" />
     </key>
   </component>
-  <component name="RunManager" selected="Mocha.UpdateProfilesHandler">
+  <component name="RunManager" selected="Mocha.ESService.Negative test">
     <configuration name="index.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/search-service/coverage/index.html" useBuiltInWebServerPort="true">
       <method v="2" />
     </configuration>
@@ -131,10 +130,10 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Mocha.ESService.Negative test" />
         <item itemvalue="Mocha.UpdateProfilesHandler" />
         <item itemvalue="Mocha.ESService.Negative test 2" />
         <item itemvalue="Mocha.ESService" />
-        <item itemvalue="Mocha.ESService.Negative test" />
         <item itemvalue="JavaScript Debug.index.html" />
       </list>
     </recent_temporary>
@@ -152,7 +151,7 @@
       <workItem from="1601212050889" duration="22144000" />
       <workItem from="1601319632941" duration="28778000" />
       <workItem from="1601586444115" duration="7568000" />
-      <workItem from="1601663697637" duration="22622000" />
+      <workItem from="1601663697637" duration="22759000" />
     </task>
     <servers />
   </component>

@@ -1,5 +1,5 @@
 import {expect} from "chai"
-import {OK, METHOD_NOT_ALLOWED} from "http-status"
+import {OK} from "http-status"
 import * as AWS from "aws-sdk";
 
 import {ESService} from "../../../src/SearchService/services/ESService"
@@ -55,7 +55,7 @@ describe('ESService', function() {
 
     expect(response)
       .to.have.property("statusCode")
-      .with.equal(METHOD_NOT_ALLOWED.valueOf())
+      .with.not.equal(OK.valueOf())
 
     expect(response)
       .to.have.property("message")
