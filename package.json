@@ -1,6 +1,6 @@
 {
   "name": "@virtuelabs-io/search-service",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "Virtuelabs Search Service",
   "scripts": {
     "test": "mocha -r ts-node/register -r source-map-support/register --full-trace -b app/tests/SearchService/**/*.test.ts -b app/tests/**/*.test.ts --timeout 10000",
