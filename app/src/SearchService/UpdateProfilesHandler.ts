@@ -4,8 +4,9 @@ import {ESService} from "./services/ESService";
 import {ESRequest} from "./config/ESRequest";
 import {Constants} from "./utils/Constants";
 import {ESServiceResponse} from "./types/ESServiceResponse";
+import {MessageService} from "./services/MessageService";
 
-
+// TODO: Create or Update review only when item is purchased
 export async function fun(event, context = {}, callback = {}) {
   const profileId = event.cognitoPoolClaims.sub
   let persistence = new ESService()
@@ -35,7 +36,10 @@ export async function fun(event, context = {}, callback = {}) {
   }
 
   if(response.data._version === 1 && response.statusCode === OK.valueOf()) {
-    // TODO: Fire domain event
+    let messageService = new MessageService()
+    messageService.messageConfigBody = response.message
+    await messageService.publish()
   }
+  
   return response
 }

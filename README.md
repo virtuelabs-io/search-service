@@ -5,6 +5,36 @@
 This application is responsible for search related queries and all CRUD operations
 on elastic search. It used `Amazon Elasticsearch Service` as its persistence.  
 
+## Infrastructure
+
+- [AWS Elastic Search Service](https://aws.amazon.com/elasticsearch-service/)
+- [SQS Queues](https://aws.amazon.com/sqs/)
+- [Cognito](https://aws.amazon.com/cognito/)
+- [Dev Ops User with necessary privileges](./serverless.yml)
+
+> Note: You can find cloudformation templates for all of these resources [here](https://github.com/virtuelabs-io/IaC)
+
+### Cognito
+
+You can use the [Cognito Cloud Formation](https://github.com/virtuelabs-io/IaC/blob/master/cf/auth/customer-cognito.yaml)
+template to provision necessary resources
+
+### Elastic Search
+
+You can use the [Elastic Search Cloud Formation](https://github.com/virtuelabs-io/IaC/blob/master/cf/search/elastic-search.yaml)
+template to provision necessary resources
+
+### SQS Queues
+
+The following queues are used for inter service communication.
+
+- Gig Created Queue
+- Review Given Queue
+- Profile Created Queue
+
+> Note: Each queue has an DLQ configured. 
+> You can find more details of the config [here](https://github.com/virtuelabs-io/IaC/blob/master/cf/messaging/sqs.yaml)
+
 ## API's Available
 
 ### Gigs
@@ -40,7 +70,7 @@ serverless remove --stage staging --aws-profile <profile name>
 
 > **Note**: Authenticated with Cognito
 
-## Creating Indexes
+## Creating Elastic Search Indexes
 
 Setup environment
 ```bash

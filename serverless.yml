@@ -11,9 +11,12 @@ provider:
   cognito-arn: ${file(./config/${self:provider.stage}.json):cognito-arn}
   channel-arn: ${file(./config/${self:provider.stage}.json):channel-arn}
   cors-origin: ${file(./config/${self:provider.stage}.json):cors-origin, '*'}
-  gigs-queue-arn: ${file(./config/${self:provider.stage}.json):queues.gigs}
-  profiles-queue-arn: ${file(./config/${self:provider.stage}.json):queues.profiles}
-  reviews-queue-arn: ${file(./config/${self:provider.stage}.json):queues.reviews}
+  gigs-queue-arn: ${file(./config/${self:provider.stage}.json):queues.gigs.arn}
+  profiles-queue-arn: ${file(./config/${self:provider.stage}.json):queues.profiles.arn}
+  reviews-queue-arn: ${file(./config/${self:provider.stage}.json):queues.reviews.arn}
+  gigs-queue-url: ${file(./config/${self:provider.stage}.json):queues.gigs.url}
+  profiles-queue-url: ${file(./config/${self:provider.stage}.json):queues.profiles.url}
+  reviews-queue-url: ${file(./config/${self:provider.stage}.json):queues.reviews.url}
   logRetentionInDays: 7
   tracing:
     lambda: ${file(./config/${self:provider.stage}.json):trace.lambda, true}
@@ -203,7 +206,7 @@ functions:
       CORS_ORIGIN: ${self:provider.cors-origin}
       ES_INDEX: ${self:provider.stage}.gigs
       FUNC_REGION: ${self:provider.region}
-      SQS_QUEUE: ${self:provider.gigs-queue-arn}
+      SQS_QUEUE: ${self:provider.gigs-queue-url}
     tags:
       purpose: PublishGigs
     events:
@@ -303,7 +306,7 @@ functions:
       CORS_ORIGIN: ${self:provider.cors-origin}
       ES_INDEX: ${self:provider.stage}.profiles
       FUNC_REGION: ${self:provider.region}
-      SQS_QUEUE: ${self:provider.gigs-profiles-arn}
+      SQS_QUEUE: ${self:provider.profiles-queue-url}
     tags:
       purpose: CreateProfiles
     events:
@@ -442,7 +445,7 @@ functions:
       CORS_ORIGIN: ${self:provider.cors-origin}
       ES_INDEX: ${self:provider.stage}.reviews
       FUNC_REGION: ${self:provider.region}
-      SQS_QUEUE: ${self:provider.reviews-queue-arn}
+      SQS_QUEUE: ${self:provider.reviews-queue-url}
     tags:
       purpose: CreateReviews
     events:
@@ -493,17 +496,17 @@ functions:
             headers:
               Content-Type: integration.response.header.Content-Type
               Access-Control-Allow-Origin: "'${self:provider.cors-origin}'"
-            authorizer:
-              name: authorizer
-              arn: ${self:provider.cognito-arn}
-              claims:
-                - phone_number
-            cors:
-              origins:
-                - '*'
-              headers:
-                - Content-Type
-                - Authorization
+          authorizer:
+            name: authorizer
+            arn: ${self:provider.cognito-arn}
+            claims:
+              - phone_number
+          cors:
+            origins:
+              - '*'
+            headers:
+              - Content-Type
+              - Authorization
   deleteReviews:
     name: deleteReviews-${self:provider.stage}
     role: SearchServiceFunctionsLambdaRole

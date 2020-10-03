@@ -1,6 +1,7 @@
 import {NOT_FOUND, OK} from "http-status"
 
 import {ESService} from "./services/ESService";
+import {MessageService} from "./services/MessageService";
 import {ESRequest} from "./config/ESRequest";
 import {Constants} from "./utils/Constants";
 import {ESServiceResponse} from "./types/ESServiceResponse";
@@ -35,7 +36,10 @@ export async function fun(event, context = {}, callback = {}) {
   }
 
   if(response.statusCode === OK.valueOf()){
-    // TODO: Fire domain event
+    let messageService = new MessageService()
+    messageService.messageConfigBody = response.message
+    await messageService.publish()
   }
+
   return response
 }

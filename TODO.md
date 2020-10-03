@@ -1,3 +1,3 @@
 # TODO
 
-- [ ] Fire messages to integrate with communications. Gig Published / Profile created / review added
+- [ ] Create/Update review only when item is purchased
