@@ -1,5 +1,4 @@
 [![Build Status](https://dev.azure.com/VirtueLabs/SerCart/_apis/build/status/virtuelabs-io.search-service?branchName=master)](https://dev.azure.com/VirtueLabs/SerCart/_build/latest?definitionId=1&branchName=master)
-[![Coverage](https://img.shields.io/azure-devops/coverage/Virtuelabs/SerCart/1?style=social)](https://img.shields.io/azure-devops/coverage/Virtuelabs/SerCart/1?style=social)
 # Search Service
 
 This application is responsible for search related queries and all CRUD operations
