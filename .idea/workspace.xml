@@ -11,9 +11,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0f0b141f-32bd-45d0-92d9-972fa10436cd" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/TODO.md" beforeDir="false" afterPath="$PROJECT_DIR$/TODO.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/azure-pipelines.yml" beforeDir="false" afterPath="$PROJECT_DIR$/azure-pipelines.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -152,7 +150,7 @@
       <workItem from="1601212050889" duration="22144000" />
       <workItem from="1601319632941" duration="28778000" />
       <workItem from="1601586444115" duration="7568000" />
-      <workItem from="1601663697637" duration="20748000" />
+      <workItem from="1601663697637" duration="20824000" />
     </task>
     <servers />
   </component>
