@@ -45,6 +45,12 @@ steps:
     command: custom
     customCommand: 'run codecov'
 
+#- task: PublishTestResults@2
+#  condition: succeededOrFailed()
+#  inputs:
+#    testRunner: JUnit
+#    testResultsFiles: '**/TEST-RESULTS.xml'
+
 - task: PublishCodeCoverageResults@1
   displayName: 'Publishing code coverage'
   inputs:
