@@ -28,10 +28,7 @@ steps:
   displayName: 'Installing AWS CLI'
 
 - script: |
-    git clone https://github.com/elasticdog/transcrypt.git
-    cd transcrypt/
-    sudo ln -s ${PWD}/transcrypt /usr/local/bin/transcrypt
-    cd ../
+    brew install transcrypt
     transcrypt --yes -c aes-256-cbc -p '$ENCRYPTED_BY_ME'
     cat ./config/stage.json
   displayName: 'Transcript Initialization'
