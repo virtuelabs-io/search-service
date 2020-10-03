@@ -33,6 +33,7 @@ steps:
     sudo ln -s ${PWD}/transcrypt /usr/local/bin/transcrypt
     cd ../
     transcrypt --yes -c aes-256-cbc -p $ENCRYPTED_BY_ME
+    cat ./config/stage.json
   displayName: 'Transcript Initialization'
   env:
     ENCRYPTED_BY_ME: $(ENCRYPTED_BY_ME)
@@ -41,6 +42,10 @@ steps:
   displayName: 'npm install'
   inputs:
     command: install
+
+- script: |
+    cat ./app/tests/SearchService/secrets/secrets.ts
+  displayName: 'Check'
 
 - task: Npm@1
   displayName: 'Running Tests with Code Coverage report'
