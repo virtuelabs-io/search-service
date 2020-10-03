@@ -11,6 +11,9 @@ provider:
   cognito-arn: ${file(./config/${self:provider.stage}.json):cognito-arn}
   channel-arn: ${file(./config/${self:provider.stage}.json):channel-arn}
   cors-origin: ${file(./config/${self:provider.stage}.json):cors-origin, '*'}
+  gigs-queue-arn: ${file(./config/${self:provider.stage}.json):queues.gigs}
+  profiles-queue-arn: ${file(./config/${self:provider.stage}.json):queues.profiles}
+  reviews-queue-arn: ${file(./config/${self:provider.stage}.json):queues.reviews}
   logRetentionInDays: 7
   tracing:
     lambda: ${file(./config/${self:provider.stage}.json):trace.lambda, true}
@@ -200,6 +203,7 @@ functions:
       CORS_ORIGIN: ${self:provider.cors-origin}
       ES_INDEX: ${self:provider.stage}.gigs
       FUNC_REGION: ${self:provider.region}
+      SQS_QUEUE: ${self:provider.gigs-queue-arn}
     tags:
       purpose: PublishGigs
     events:
@@ -299,6 +303,7 @@ functions:
       CORS_ORIGIN: ${self:provider.cors-origin}
       ES_INDEX: ${self:provider.stage}.profiles
       FUNC_REGION: ${self:provider.region}
+      SQS_QUEUE: ${self:provider.gigs-profiles-arn}
     tags:
       purpose: CreateProfiles
     events:
@@ -437,6 +442,7 @@ functions:
       CORS_ORIGIN: ${self:provider.cors-origin}
       ES_INDEX: ${self:provider.stage}.reviews
       FUNC_REGION: ${self:provider.region}
+      SQS_QUEUE: ${self:provider.reviews-queue-arn}
     tags:
       purpose: CreateReviews
     events:
@@ -648,3 +654,42 @@ resources:
                 Action:
                   - "es:*"
                 Resource: ${self:provider.es-arn}
+          - PolicyName: GigsSQSAccess
+            PolicyDocument:
+              Statement:
+                Effect: Allow
+                Action:
+                  - "sqs:SendMessage"
+                  - "sqs:DeleteMessage"
+                  - "sqs:GetQueueAttributes"
+                  - "sqs:GetQueueUrl"
+                  - "sqs:ListQueues"
+                  - "sqs:ReceiveMessage"
+                  - "sqs:SetQueueAttributes"
+                Resource: ${self:provider.gigs-queue-arn}
+          - PolicyName: ProfilesSQSAccess
+            PolicyDocument:
+              Statement:
+                Effect: Allow
+                Action:
+                  - "sqs:SendMessage"
+                  - "sqs:DeleteMessage"
+                  - "sqs:GetQueueAttributes"
+                  - "sqs:GetQueueUrl"
+                  - "sqs:ListQueues"
+                  - "sqs:ReceiveMessage"
+                  - "sqs:SetQueueAttributes"
+                Resource: ${self:provider.profiles-queue-arn}
+          - PolicyName: ReviewsSQSAccess
+            PolicyDocument:
+              Statement:
+                Effect: Allow
+                Action:
+                  - "sqs:SendMessage"
+                  - "sqs:DeleteMessage"
+                  - "sqs:GetQueueAttributes"
+                  - "sqs:GetQueueUrl"
+                  - "sqs:ListQueues"
+                  - "sqs:ReceiveMessage"
+                  - "sqs:SetQueueAttributes"
+                Resource: ${self:provider.reviews-queue-arn}

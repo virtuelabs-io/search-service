@@ -9,6 +9,7 @@ export class Commons {
     process.env.ES_INDEX = `${Secrets.ENVIRONMENT}.${Constants.GIGS}`
     process.env.AWS_ACCESS_KEY_ID = Secrets.AWS_ACCESS_KEY_ID
     process.env.AWS_SECRET_ACCESS_KEY = Secrets.AWS_SECRET_ACCESS_KEY
+    process.env.SQS_QUEUE = ""
   }
 
   static setUpReviewsTestEnvironment = function () {
@@ -17,6 +18,7 @@ export class Commons {
     process.env.ES_INDEX = `${Secrets.ENVIRONMENT}.${Constants.REVIEWS}`
     process.env.AWS_ACCESS_KEY_ID = Secrets.AWS_ACCESS_KEY_ID
     process.env.AWS_SECRET_ACCESS_KEY = Secrets.AWS_SECRET_ACCESS_KEY
+    process.env.SQS_QUEUE = ""
   }
 
   static setUpProfilesTestEnvironment = function () {
@@ -25,5 +27,6 @@ export class Commons {
     process.env.ES_INDEX = `${Secrets.ENVIRONMENT}.${Constants.PROFILES}`
     process.env.AWS_ACCESS_KEY_ID = Secrets.AWS_ACCESS_KEY_ID
     process.env.AWS_SECRET_ACCESS_KEY = Secrets.AWS_SECRET_ACCESS_KEY
+    process.env.SQS_QUEUE = ""
   }
 }

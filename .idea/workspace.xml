@@ -11,10 +11,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0f0b141f-32bd-45d0-92d9-972fa10436cd" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sercart-gigs-service.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sercart-gigs-service.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/azure-pipelines.yml" beforeDir="false" afterPath="$PROJECT_DIR$/azure-pipelines.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/tests/SearchService/utils/Commons.ts" beforeDir="false" afterPath="$PROJECT_DIR$/app/tests/SearchService/utils/Commons.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/stage.json" beforeDir="false" afterPath="$PROJECT_DIR$/config/stage.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/serverless.yml" beforeDir="false" afterPath="$PROJECT_DIR$/serverless.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,7 +41,7 @@
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/app/tests/SearchService" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../IaC/scripts" />
     <property name="nodejs.jest.jest_package" value="" />
     <property name="nodejs.mocha.mocha_node_package_dir" value="$PROJECT_DIR$/node_modules/mocha" />
     <property name="nodejs_package_manager_path" value="npm" />
@@ -49,19 +51,19 @@
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/../IaC/scripts" />
+      <recent name="$PROJECT_DIR$/app/tests/SearchService" />
+      <recent name="$PROJECT_DIR$/app/src/SearchService" />
+      <recent name="$PROJECT_DIR$/es" />
+      <recent name="$PROJECT_DIR$/contract" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/app/src/SearchService" />
       <recent name="$PROJECT_DIR$/app/src/SearchService/Services" />
       <recent name="$PROJECT_DIR$/app/src" />
       <recent name="$PROJECT_DIR$/app" />
       <recent name="$PROJECT_DIR$/src/SearchService" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/app/tests/SearchService" />
-      <recent name="$PROJECT_DIR$/app/src/SearchService" />
-      <recent name="$PROJECT_DIR$/es" />
-      <recent name="$PROJECT_DIR$/contract" />
-      <recent name="$PROJECT_DIR$" />
     </key>
   </component>
   <component name="RunManager" selected="Mocha.ESService.Negative test">
@@ -154,7 +156,7 @@
       <workItem from="1601319632941" duration="28778000" />
       <workItem from="1601586444115" duration="7568000" />
       <workItem from="1601663697637" duration="23252000" />
-      <workItem from="1601692209122" duration="1014000" />
+      <workItem from="1601692209122" duration="6654000" />
     </task>
     <servers />
   </component>
