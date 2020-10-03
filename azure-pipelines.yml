@@ -1,5 +1,5 @@
 pool:
-  vmImage: 'Ubuntu 16.04'
+  vmImage: 'macOS-10.15'
 
 trigger:
   branches:
@@ -32,7 +32,7 @@ steps:
     cd transcrypt/
     sudo ln -s ${PWD}/transcrypt /usr/local/bin/transcrypt
     cd ../
-    transcrypt --yes -c aes-256-cbc -p $ENCRYPTED_BY_ME
+    transcrypt --yes -c aes-256-cbc -p '$ENCRYPTED_BY_ME'
     cat ./config/stage.json
   displayName: 'Transcript Initialization'
   env:
