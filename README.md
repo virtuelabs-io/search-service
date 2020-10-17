@@ -43,7 +43,7 @@ The following queues are used for inter service communication.
   - `GET` : https://gateway-id.execute-api.ap-south-1.amazonaws.com/stage/api/v1/gigs/{id}
   - `POST` : https://gateway-id.execute-api.ap-south-1.amazonaws.com/stage/api/v1/gigs/publish/{id}
   - `POST` : https://gateway-id.execute-api.ap-south-1.amazonaws.com/stage/api/v1/gigs/unpublish/{id}
-  - `GET` : https://gateway-id.execute-api.ap-south-1.amazonaws.com/stage/api/v1/gigs
+  - `POST` : https://gateway-id.execute-api.ap-south-1.amazonaws.com/stage/api/v1/gigs
 
 ### Profiles
   - `POST` : https://gateway-id.execute-api.ap-south-1.amazonaws.com/stage/api/v1/profiles/{id}
@@ -56,7 +56,7 @@ The following queues are used for inter service communication.
   - `PUT` - https://gateway-id.execute-api.ap-south-1.amazonaws.com/stage/api/v1/reviews/{id}
   - `DELETE` - https://gateway-id.execute-api.ap-south-1.amazonaws.com/stage/api/v1/reviews/{id}
   - `GET` - https://gateway-id.execute-api.ap-south-1.amazonaws.com/stage/api/v1/reviews/{id}
-  - `GET` - https://gateway-id.execute-api.ap-south-1.amazonaws.com/stage/api/v1/reviews
+  - `POST` - https://gateway-id.execute-api.ap-south-1.amazonaws.com/stage/api/v1/reviews
 
 # Build and deploy 
 

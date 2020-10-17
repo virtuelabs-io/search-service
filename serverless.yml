@@ -278,7 +278,7 @@ functions:
     events:
       - http:
           path: api/v1/gigs
-          method: get
+          method: post
           integration: lambda
           response:
             headers:
@@ -589,7 +589,7 @@ functions:
     events:
       - http:
           path: api/v1/reviews
-          method: get
+          method: post
           integration: lambda
           response:
             headers:
