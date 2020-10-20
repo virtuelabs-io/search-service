@@ -7,7 +7,8 @@ on elastic search. It used `Amazon Elasticsearch Service` as its persistence.
 ## Infrastructure
 
 - [AWS Elastic Search Service](https://aws.amazon.com/elasticsearch-service/)
-- [SQS Queues](https://aws.amazon.com/sqs/)
+- [AWS Event Bridge](https://aws.amazon.com/eventbridge/)
+- [SQS Queues](https://aws.amazon.com/sqs/) (Depricated)
 - [Cognito](https://aws.amazon.com/cognito/)
 - [Dev Ops User with necessary privileges](./serverless.yml)
 
@@ -23,7 +24,17 @@ template to provision necessary resources
 You can use the [Elastic Search Cloud Formation](https://github.com/virtuelabs-io/IaC/blob/master/cf/search/elastic-search.yaml)
 template to provision necessary resources
 
-### SQS Queues
+### Event Bridge
+
+The following event bus are used for inter micro-service communication
+
+- Gig Created Queue
+- Review Given Queue
+- Profile Created Queue
+
+> Note: Consumers take care of DLQ handling and messages are routed based on event bridge rules 
+
+### SQS Queues (Deprecated)
 
 The following queues are used for inter service communication.
 
@@ -33,6 +44,7 @@ The following queues are used for inter service communication.
 
 > Note: Each queue has an DLQ configured. 
 > You can find more details of the config [here](https://github.com/virtuelabs-io/IaC/blob/master/cf/messaging/sqs.yaml)
+> Use of SQS is now deprecated and instead `AWS Event Bridge` is being used
 
 ## API's Available
 

@@ -11,7 +11,22 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0f0b141f-32bd-45d0-92d9-972fa10436cd" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/app/src/SearchService/services/EventBridgeService.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/tests/SearchService/services/EventBridgeService.test.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/SearchService/CreateReviewsHandler.ts" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/SearchService/CreateReviewsHandler.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/SearchService/PublishGigsHandler.ts" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/SearchService/PublishGigsHandler.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/SearchService/UpdateProfilesHandler.ts" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/SearchService/UpdateProfilesHandler.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/SearchService/services/MessageService.ts" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/SearchService/services/SQSService.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/SearchService/utils/Constants.ts" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/SearchService/utils/Constants.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/tests/SearchService/secrets/secrets.ts" beforeDir="false" afterPath="$PROJECT_DIR$/app/tests/SearchService/secrets/secrets.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/tests/SearchService/services/MessageService.test.ts" beforeDir="false" afterPath="$PROJECT_DIR$/app/tests/SearchService/services/SQSService.test.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/tests/SearchService/utils/Commons.ts" beforeDir="false" afterPath="$PROJECT_DIR$/app/tests/SearchService/utils/Commons.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/stage.json" beforeDir="false" afterPath="$PROJECT_DIR$/config/stage.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/serverless.yml" beforeDir="false" afterPath="$PROJECT_DIR$/serverless.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,7 +51,7 @@
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../IaC/scripts" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/app/tests/SearchService/services" />
     <property name="nodejs.jest.jest_package" value="" />
     <property name="nodejs.mocha.mocha_node_package_dir" value="$PROJECT_DIR$/node_modules/mocha" />
     <property name="nodejs_package_manager_path" value="npm" />
@@ -46,13 +61,6 @@
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/../IaC/scripts" />
-      <recent name="$PROJECT_DIR$/app/tests/SearchService" />
-      <recent name="$PROJECT_DIR$/app/src/SearchService" />
-      <recent name="$PROJECT_DIR$/es" />
-      <recent name="$PROJECT_DIR$/contract" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/app/src/SearchService/services" />
       <recent name="$PROJECT_DIR$/app/src/SearchService" />
@@ -60,8 +68,15 @@
       <recent name="$PROJECT_DIR$/app/src" />
       <recent name="$PROJECT_DIR$/app" />
     </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/app/tests/SearchService/services" />
+      <recent name="$PROJECT_DIR$/app/src/SearchService/services" />
+      <recent name="$PROJECT_DIR$/../IaC/scripts" />
+      <recent name="$PROJECT_DIR$/app/tests/SearchService" />
+      <recent name="$PROJECT_DIR$/app/src/SearchService" />
+    </key>
   </component>
-  <component name="RunManager" selected="Mocha.MessageService.Publish Test">
+  <component name="RunManager" selected="Mocha.EventBridgeService">
     <configuration name="ESService.Negative test" type="mocha-javascript-test-runner" temporary="true" nameIsGenerated="true">
       <node-interpreter>project</node-interpreter>
       <node-options />
@@ -75,6 +90,21 @@
       <test-names>
         <name value="ESService" />
         <name value="Negative test" />
+      </test-names>
+      <method v="2" />
+    </configuration>
+    <configuration name="EventBridgeService" type="mocha-javascript-test-runner" temporary="true" nameIsGenerated="true">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <mocha-package>$PROJECT_DIR$/node_modules/mocha</mocha-package>
+      <working-directory>$PROJECT_DIR$</working-directory>
+      <pass-parent-env>true</pass-parent-env>
+      <ui>bdd</ui>
+      <extra-mocha-options>--require ts-node/register</extra-mocha-options>
+      <test-kind>SUITE</test-kind>
+      <test-file>$PROJECT_DIR$/app/tests/SearchService/services/EventBridgeService.test.ts</test-file>
+      <test-names>
+        <name value="EventBridgeService" />
       </test-names>
       <method v="2" />
     </configuration>
@@ -109,21 +139,6 @@
       </test-names>
       <method v="2" />
     </configuration>
-    <configuration name="UpdateProfilesHandler" type="mocha-javascript-test-runner" temporary="true" nameIsGenerated="true">
-      <node-interpreter>project</node-interpreter>
-      <node-options />
-      <mocha-package>$PROJECT_DIR$/node_modules/mocha</mocha-package>
-      <working-directory>$PROJECT_DIR$</working-directory>
-      <pass-parent-env>true</pass-parent-env>
-      <ui>bdd</ui>
-      <extra-mocha-options>--require ts-node/register</extra-mocha-options>
-      <test-kind>SUITE</test-kind>
-      <test-file>$PROJECT_DIR$/app/tests/SearchService/UpdateProfilesHandler.test.ts</test-file>
-      <test-names>
-        <name value="UpdateProfilesHandler" />
-      </test-names>
-      <method v="2" />
-    </configuration>
     <configuration name="app/tests/SearchService/services/MessageService.test.ts" type="mocha-javascript-test-runner" temporary="true" nameIsGenerated="true">
       <node-interpreter>project</node-interpreter>
       <node-options />
@@ -138,11 +153,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Mocha.EventBridgeService" />
         <item itemvalue="Mocha.MessageService.Publish Test" />
         <item itemvalue="Mocha.MessageService" />
         <item itemvalue="Mocha.app/tests/SearchService/services/MessageService.test.ts" />
         <item itemvalue="Mocha.ESService.Negative test" />
-        <item itemvalue="Mocha.UpdateProfilesHandler" />
       </list>
     </recent_temporary>
   </component>
@@ -160,7 +175,12 @@
       <workItem from="1601319632941" duration="28778000" />
       <workItem from="1601586444115" duration="7568000" />
       <workItem from="1601663697637" duration="23252000" />
-      <workItem from="1601692209122" duration="13144000" />
+      <workItem from="1601692209122" duration="13321000" />
+      <workItem from="1602185252326" duration="153000" />
+      <workItem from="1602931425724" duration="144000" />
+      <workItem from="1602931600708" duration="670000" />
+      <workItem from="1603044056545" duration="475000" />
+      <workItem from="1603224428754" duration="5641000" />
     </task>
     <servers />
   </component>
@@ -183,22 +203,26 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state width="1626" height="74" key="GridCell.Tab.0.bottom" timestamp="1601732867947">
+    <state x="524" y="259" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1602931560122">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state width="1626" height="74" key="GridCell.Tab.0.bottom/-1263.-1080.1920.1080/657.-1920.1080.1920/0.0.1680.1050@0.0.1680.1050" timestamp="1601732867947" />
-    <state width="1626" height="74" key="GridCell.Tab.0.center" timestamp="1601732867945">
+    <state x="524" y="259" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/-1263.-1080.1920.1080/657.-1920.1080.1920/0.0.1680.1050@0.0.1680.1050" timestamp="1602931560122" />
+    <state width="1626" height="422" key="GridCell.Tab.0.bottom" timestamp="1603229246492">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state width="1626" height="74" key="GridCell.Tab.0.center/-1263.-1080.1920.1080/657.-1920.1080.1920/0.0.1680.1050@0.0.1680.1050" timestamp="1601732867945" />
-    <state width="1626" height="74" key="GridCell.Tab.0.left" timestamp="1601732867944">
+    <state width="1626" height="422" key="GridCell.Tab.0.bottom/-1263.-1080.1920.1080/657.-1920.1080.1920/0.0.1680.1050@0.0.1680.1050" timestamp="1603229246492" />
+    <state width="1626" height="422" key="GridCell.Tab.0.center" timestamp="1603229246491">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state width="1626" height="74" key="GridCell.Tab.0.left/-1263.-1080.1920.1080/657.-1920.1080.1920/0.0.1680.1050@0.0.1680.1050" timestamp="1601732867944" />
-    <state width="1626" height="74" key="GridCell.Tab.0.right" timestamp="1601732867946">
+    <state width="1626" height="422" key="GridCell.Tab.0.center/-1263.-1080.1920.1080/657.-1920.1080.1920/0.0.1680.1050@0.0.1680.1050" timestamp="1603229246491" />
+    <state width="1626" height="422" key="GridCell.Tab.0.left" timestamp="1603229246490">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state width="1626" height="74" key="GridCell.Tab.0.right/-1263.-1080.1920.1080/657.-1920.1080.1920/0.0.1680.1050@0.0.1680.1050" timestamp="1601732867946" />
+    <state width="1626" height="422" key="GridCell.Tab.0.left/-1263.-1080.1920.1080/657.-1920.1080.1920/0.0.1680.1050@0.0.1680.1050" timestamp="1603229246490" />
+    <state width="1626" height="422" key="GridCell.Tab.0.right" timestamp="1603229246491">
+      <screen x="0" y="0" width="1680" height="1050" />
+    </state>
+    <state width="1626" height="422" key="GridCell.Tab.0.right/-1263.-1080.1920.1080/657.-1920.1080.1920/0.0.1680.1050@0.0.1680.1050" timestamp="1603229246491" />
     <state x="238" y="76" key="SettingsEditor" timestamp="1601212216381">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>

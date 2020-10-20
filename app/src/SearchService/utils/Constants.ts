@@ -35,4 +35,16 @@ export class Constants {
     API_VERSION: "2012-11-05",
     DELAY_SECONDS: 5
   }
+
+  static BUS = {
+    DETAIL_TYPES: {
+      CREATED: "CREATED",
+      PUBLISHED: "PUBLISHED"
+    },
+    SOURCES: {
+      GIG: "GIG",
+      REVIEW: "REVIEW",
+      PROFILE: "PROFILE"
+    }
+  }
 }

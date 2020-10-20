@@ -1,10 +1,10 @@
 import {NOT_FOUND, OK} from "http-status"
 
 import {ESService} from "./services/ESService";
-import {MessageService} from "./services/MessageService";
 import {ESRequest} from "./config/ESRequest";
 import {Constants} from "./utils/Constants";
 import {ESServiceResponse} from "./types/ESServiceResponse";
+import {EventBridgeService} from "./services/EventBridgeService";
 
 
 export async function fun(event, context = {}, callback = {}) {
@@ -36,8 +36,8 @@ export async function fun(event, context = {}, callback = {}) {
   }
 
   if(response.statusCode === OK.valueOf()){
-    let messageService = new MessageService()
-    messageService.messageConfigBody = response.message
+    let messageService = new EventBridgeService(Constants.BUS.SOURCES.GIG, Constants.BUS.DETAIL_TYPES.PUBLISHED)
+    messageService.entryDetail = response.message
     await messageService.publish()
   }
 
