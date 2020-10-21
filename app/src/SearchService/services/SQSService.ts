@@ -3,7 +3,7 @@ import * as AWS from 'aws-sdk'
 import {Constants} from "../utils/Constants";
 
 
-export class MessageService {
+export class SQSService {
   private _sqs: AWS.SQS
   private _queueURL: string
   private _messageConfig: any

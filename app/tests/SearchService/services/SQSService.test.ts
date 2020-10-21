@@ -1,17 +1,17 @@
 import {expect} from "chai"
 
-import {MessageService} from "../../../src/SearchService/services/MessageService"
+import {SQSService} from "../../../src/SearchService/services/SQSService"
 import {Constants as appConstants} from "../../../src/SearchService/utils/Constants"
 
 import {Commons} from "../utils/Commons"
 import {TestData} from "../utils/TestData";
 
 
-describe('MessageService', function() {
+describe('SQSService', function() {
   before(Commons.setUpGigsTestEnvironment)
 
   it('Config Test', async function() {
-    let messageService = new MessageService()
+    let messageService = new SQSService()
     messageService.messageConfigBody = TestData.gig
     const config = messageService.messageConfig
 
@@ -41,7 +41,7 @@ describe('MessageService', function() {
   })
 
   it('Publish Test', async function() {
-    let messageService = new MessageService()
+    let messageService = new SQSService()
     messageService.messageConfigBody = TestData.gig
     let response = await messageService.publish()
 

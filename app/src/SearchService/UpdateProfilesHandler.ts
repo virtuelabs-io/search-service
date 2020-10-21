@@ -4,7 +4,8 @@ import {ESService} from "./services/ESService";
 import {ESRequest} from "./config/ESRequest";
 import {Constants} from "./utils/Constants";
 import {ESServiceResponse} from "./types/ESServiceResponse";
-import {MessageService} from "./services/MessageService";
+import {SQSService} from "./services/SQSService";
+import {EventBridgeService} from "./services/EventBridgeService";
 
 // TODO: Create or Update review only when item is purchased
 export async function fun(event, context = {}, callback = {}) {
@@ -36,10 +37,10 @@ export async function fun(event, context = {}, callback = {}) {
   }
 
   if(response.data._version === 1 && response.statusCode === OK.valueOf()) {
-    let messageService = new MessageService()
-    messageService.messageConfigBody = response.message
+    let messageService = new EventBridgeService(Constants.BUS.SOURCES.PROFILE, Constants.BUS.DETAIL_TYPES.CREATED)
+    messageService.entryDetail = response.message
     await messageService.publish()
   }
-  
+
   return response
 }
