@@ -12,7 +12,14 @@
     "pro",
     "speaks",
     "location",
-    "country"
+    "country",
+    "qualifications",
+    "skillSet",
+    "occupation",
+    "certifications",
+    "profilePic",
+    "shortBio",
+    "website"
   ],
   "properties": {
     "firstName": {
@@ -33,6 +40,24 @@
       "description": "An explanation about the purpose of this instance.",
       "default": "SELLER",
       "enum": ["SELLER", "BUYER"]
+    },
+    "profilePic": {
+      "type": "string",
+      "title": "Profile Pic",
+      "description": "Profile Pic URL",
+      "default": ""
+    },
+    "shortBio": {
+      "type": "string",
+      "title": "Biography",
+      "description": "Users biography in some words",
+      "default": ""
+    },
+    "website": {
+      "type": "string",
+      "title": "Website",
+      "description": "Personal Website",
+      "default": ""
     },
     "level": {
       "type": "number",
@@ -57,10 +82,65 @@
       "maxItems": 7,
       "uniqueItems": true,
       "items": {
-        "type": "string",
-        "title": "Language",
+        "type": "object",
+        "title": "Speaks Object",
         "description": "Language spoken",
-        "default": ""
+        "default": {}
+      }
+    },
+    "qualifications": {
+      "type": "array",
+      "title": "Qualifications",
+      "description": "Users qualifications",
+      "default": [],
+      "additionalItems": false,
+      "minItems": 0,
+      "maxItems": 10,
+      "uniqueItems": true,
+      "items": {
+        "type": "object",
+        "title": "Qualifications Object",
+        "description": "Qualification spoken",
+        "default": {}
+      }
+    },
+    "skillSet": {
+      "type": "array",
+      "title": "Skill Set",
+      "description": "List of Skills",
+      "default": [],
+      "additionalItems": false,
+      "minItems": 0,
+      "maxItems": 20,
+      "uniqueItems": true,
+      "items": {
+        "type": "object",
+        "title": "Skills Object",
+        "description": "Skills",
+        "default": {}
+      }
+    },
+    "occupation": {
+      "type": "object",
+      "title": "Occupation",
+      "description": "Users occupation",
+      "default": {},
+      "uniqueItems": true,
+    },
+    "certifications": {
+      "type": "array",
+      "title": "Certifications",
+      "description": "Users certifications",
+      "default": [],
+      "additionalItems": false,
+      "minItems": 0,
+      "maxItems": 20,
+      "uniqueItems": true,
+      "items": {
+        "type": "object",
+        "title": "Certifications Object",
+        "description": "Users certification",
+        "default": {}
       }
     },
     "location": {

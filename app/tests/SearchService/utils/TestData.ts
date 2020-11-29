@@ -139,14 +139,29 @@ export class TestData {
     "profileType": "SELLER",
     "pro": false,
     "speaks": [
-      "English",
-      "Spanish"
+       { "proficiency": "E", "language": "EN" }
     ],
     "location": {
       "lat": 46.07,
       "lon": 1.47
     },
-    "country": "UK"
+    "country": "UK",
+    "qualifications": [
+        { "country": "IN", "college": "xyz", "title": "", "major": "", "year": "" }
+    ],
+      "skillSet": [
+          { "proficiency": "E", "skill": "Cloud Eng" }
+      ],
+      "occupation": {
+        "primary": { "category": "DM", "skills": ["DM_CM","DM_MM"] },
+        "Secondary": { "category": "DM", "skills": ["DM_CM","DM_MM"] }
+      },
+      "certifications": [
+          { "name": "", "Certified_from": "", "year": 2015 }
+      ],
+      "profilePic": "https://location/to/profilepic.jpg",
+      "shortBio": "Short Bio",
+      "website": "https://website.com"
   }
 
   static review = {
